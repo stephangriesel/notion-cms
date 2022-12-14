@@ -10,12 +10,12 @@ const notion = new Client({
 export async function handler(event, context) {
     const response = await notion.databases.query({
         database_id: NOTION_DB,
-        // filter: {
-        //     type: 'status',
-        //     status: {
-        //         equals: 'Live'
-        //     }
-        // }
+        filter: {
+            property: 'Status',
+            status: {
+                equals: 'Live'
+            }
+        }
     })
     return {
         statusCode: 200,
