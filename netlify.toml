@@ -1,3 +1,9 @@
 [build]
   functions = "functions"
   targetPort = 5173
+
+# Redirect endpoint to more friendly-to-read address, in this case it will be: http://localhost:8888/api/fetchNotion
+[[redirects]]
+  from = "/api/*"
+  to = ".netlify/functions/:splat"
+  status = 200
