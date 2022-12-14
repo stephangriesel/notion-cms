@@ -8,6 +8,7 @@ const notion = new Client({
 })
 
 export async function handler(event, context) {
+    try {
     const response = await notion.databases.query({
         database_id: NOTION_DB,
         filter: {
@@ -21,4 +22,11 @@ export async function handler(event, context) {
         statusCode: 200,
         body: JSON.stringify(response),
     }
+} catch(error){
+    console.error(error);
+    return {
+        statusCode: 500,
+        body: error.toString(),
+    }
+}
 }
