@@ -1,15 +1,13 @@
-import React, {useEffect} from 'react';
+import React, { useEffect, useState } from 'react';
 import CardContainer from './components/CardContainer';
 
 function App() {
+  let [notionData, setNotionData] = useState(null);
 
   useEffect(() => {
-    async function fetchDataFromAPIEndpoint(){
-      const cards = await fetch('/api/fetchNotion')
-      .then((res) => res.json()
-      .then((data) => console.log("check data results",data.results)))
-    }
-    fetchDataFromAPIEndpoint()
+    fetch('/api/fetchNotion')
+    .then((res) => res.json()
+    .then((data) => console.log("check data results", data.results)))
   })
 
 
