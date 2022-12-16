@@ -1,7 +1,8 @@
 import React from 'react';
 import Card from './Card';
 
-const CardContainer = () => {
+const CardContainer = ({notionData}) => {
+  console.log("notion data in container",notionData);
   return (
     <div className='grid grid-cols-1 md:grid-cols-4'>
         <Card imgUrl={"https://doodleipsum.com/700x525/hand-drawn?i=222b26c23a8f805f506d35b0a536569c"} title="Title" paragraphText="Paragraph Text" buttonText="Click Me" />
