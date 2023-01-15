@@ -1,7 +1,7 @@
 # Notion CMS
 
 1. Clone & `npm install`
-2. Add data to [Notion](https://drive.google.com/file/d/10RnLGxG_YIVPC6yP4YY5ZsP4YZPgjWYJ/view?usp=share_link)
+2. Download data and add to [Notion](https://drive.google.com/file/d/10RnLGxG_YIVPC6yP4YY5ZsP4YZPgjWYJ/view?usp=share_link). ##Remember to change layout to board
 3. Install Netlify CLI: `npm install netlify-cli -g`, also install locally
 4. Link account `netlify link`
 5. Get API key from [Notion My Integrations Page](https://www.notion.so/my-integrations) 
