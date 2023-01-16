@@ -8,5 +8,6 @@
 6. [Get Database ID](https://developers.notion.com/docs/working-with-databases) from **Notion** page 
 7. Add environment variables in Netlify: `NOTION_DB` & `NOTION_KEY`
 8. Start dev `netlify dev`
-9. Review function in `toml` file: Netlify [Docs](https://docs.netlify.com/functions/build)
-10. Confirm `json` is being fetched: `http://localhost:8888/.netlify/functions/fetchNotion`
+9. Remember to [update](https://www.notion.so/help/workspace-settings) workspace URL
+10. Review function in `toml` file: Netlify [Docs](https://docs.netlify.com/functions/build)
+11. Confirm `json` is being fetched: `http://localhost:8888/.netlify/functions/fetchNotion`
