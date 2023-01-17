@@ -7,6 +7,7 @@ const notion = new Client({
     auth: NOTION_KEY,
 })
 
+// This determines if card is live or not, be sure status name is same on Notion
 export async function handler(event, context) {
     try {
     const response = await notion.databases.query({
